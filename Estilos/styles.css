@@ -14,14 +14,12 @@
       font-size: 2.4rem; }
       .bhome header .row .navitem:hover {
         color: #0956e6; }
-  .bhome main .video {
-    margin-left: 55%;
+  .bhome main .comercial {
+    margin-left: 60%;
     margin-top: 2.3%;
-    margin-bottom: 2.3%;
-    height: 24rem; }
-    .bhome main .video iframe {
-      border: rgba(179, 31, 31, 0.993) groove 25px;
-      border-radius: 20px; }
+    margin-bottom: 2.3%; 
+    border: rgba(179, 31, 31, 0.993) groove 25px;
+    border-radius: 20px;}
   .bhome main .bestsellers {
     border: 10px solid black;
     background: linear-gradient(#cc8b00, #dbc925);
@@ -66,18 +64,21 @@
       position: fixed; }
 
 @media (max-width: 1500px) {
-  .hola {
+  .bhome footer .hola {
     display: none; }
-  .video {
-    margin: 2%;
-    display: flex;
-    justify-content: center; } }
+  .bhome main .comercial{
+    border-radius: 10px; 
+    width: 50%;
+    margin-left: 48%;
+    margin-top: 2.3%;
+    margin-bottom: 2.3%;} } 
 
-@media (max-width: 410px) {
+@media (max-width: 768px) {
   .hola {
     display: none; }
-  .video {
-    display: none; } }
+  .bhome main .comercial {
+    margin: 0%;
+    width: 100%;} }
 
 * {
   padding: 0%;
@@ -274,9 +275,7 @@
   height: 100vh;
   background: linear-gradient(#145ca0, #be1934);
   background-repeat: no-repeat;
-  background-size: auto;
-  display: flex;
-  flex-direction: column; }
+  background-size: auto; }
   .bcontactos header .row {
     background-color: black; }
     .bcontactos header .row .navitem {
@@ -399,7 +398,10 @@
 
 .babout {
   width: 100%;
-  background: linear-gradient(#145ca0, #be1934); }
+  background: linear-gradient(#145ca0, #be1934);
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;} 
   .babout header .row {
     background-color: black; }
     .babout header .row .navitem {
@@ -436,14 +438,16 @@
         display: flex;
         margin: 20px; }
   .babout footer {
+    width: 100%;
     font-family: "Koulen", cursive;
     font-size: 18px;
     font-weight: lighter;
     font-style: inherit;
     color: lightgray;
     background-color: black;
-    position: absolute;
-    width: 100%; }
+    margin-top: 1.6%;
+    margin-bottom: 0%; 
+  }
 
 @media (max-width: 990px) {
   .logo {
